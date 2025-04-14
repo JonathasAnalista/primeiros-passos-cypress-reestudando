@@ -12,7 +12,7 @@ describe('Orange HRM Tests', () => {
   }
 
   it('Login - Success', () => { //Se usar o .skip depois do it exemplo: it.skip (desliga esse test ele não irá executar)
-    cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+    cy.visit('/auth/login')
     cy.get(selectorList.usernameField).type(userData.UserSuccess.username)
     cy.get(selectorList.passwordField).type(userData.UserSuccess.password)
     cy.get(selectorList.loginButton).click()
@@ -20,7 +20,7 @@ describe('Orange HRM Tests', () => {
     cy.get(selectorList.dashboardGrid) //verificando se a página está correta depois de logar. opção 2 
   })
   it('Login - Fail', () => {
-    cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+    cy.visit('/auth/login')
     cy.get(selectorList.usernameField).type(userData.userFail.username)
     cy.get(selectorList.passwordField).type(userData.userFail.password)
     cy.get(selectorList.loginButton).click()
