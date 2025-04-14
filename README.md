@@ -1,1 +1,1 @@
-# README ADDED
+# My Cypress Automation
