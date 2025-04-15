@@ -3,7 +3,7 @@
     "username": "Admin",
     "password": "admin123"
   },
-  "userFail": {
+"userFail": {
   "username": "test",
   "password": "test"
   }
